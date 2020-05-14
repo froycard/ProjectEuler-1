@@ -1,0 +1,16 @@
+#include <iostream>
+
+int main()
+{
+	unsigned sum = 0;
+	unsigned lim = 0;
+	std::cin >> lim;
+	for(auto i=0; i<lim; ++i)
+	{
+		//std::cout << i << ":" << i%3 << " " << i%5 << std::endl;
+		if(!(i%3)) sum+=i;
+		else if(!(i%5)) sum+=i;
+	}
+	std::cout << "Result: " << sum << std::endl;
+	return 0;
+}
